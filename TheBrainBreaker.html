@@ -1,0 +1,44 @@
+<!--    i would like to create a page that has a 
+    picture as a background and a gif as a button that once 
+    selected it will start a visual timer that counts in 
+    real time and you will select the button again to stop it. 
+    once you have went passed 2 hours an alert will pop up 
+    that says " time for a brain break would you like to play 
+    a game."." -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBrainBreak</title>
+    <link rel="stylesheet" href="TheBrainBreaker.css">
+</head>
+
+<body>
+    <!-- this is the outline of the page -->
+    <Div class="container">
+        <div class="header" >
+            <h1 id="headword">The Brain Breaker</h1>
+        </div>
+        <!-- <img src="learning-on-line--study-and-knowledge-illust.jpeg" width="1800" height="1300" alt="pagecover"> -->
+        <div class="pagelayout">
+            <div id="digital-clock"></div>
+            <div class="middle">
+                <img class="think" src="Thinking.gif" alt="thought" width="100" height="100px" onclick="myFunction()">
+                <!-- <Button id="slb" style="margin-left: 950px;">Start Learning</Button> --> 
+                <div id="app"></div>
+            </div>
+        </div>
+        <div class="alert">
+            <span class="alertbtn" onclick="this.parentElement.style.display='none';"> <img id="saw" src="saw gif 2.gif" width="300" height="250" alt=""></span>
+            <strong>Brain Break Time!..."If You're Good At Anticipating The Human Mind, It Leaves Nothing To Chance...."</strong> Want To Play A Game...
+            
+        </div>
+        <!-- this is the end of the page -->
+    </Div>
+    <script src="TheBrainBreaker.js"></script>
+</body>
+
+</html>
